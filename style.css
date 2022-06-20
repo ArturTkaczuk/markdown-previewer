@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.app {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  background-color: #65bd59;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.fa-solid {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.fa-solid:hover {
+  color: white;
+}
+
+.editor-wrapper,
+.previewer-wrapper {
+  box-shadow: 0 0 8px 5px rgb(219, 219, 219);
+}
+
+.editor-wrapper,
+.editor-textarea {
+  max-width: 90vw;
+  width: 600px;
+}
+
+.previewer-wrapper,
+.previwer-text {
+  max-width: 90vw;
+  width: 800px;
+}
+
+.editor-textarea {
+  border: solid black;
+  border-width: 0px 1px 1px 1px;
+  padding: 15px;
+  resize: vertical;
+  min-height: 200px;
+  vertical-align: middle;
+}
+
+.previewer-text {
+  background-color: aliceblue;
+  border: solid black;
+  border-width: 0px 1px 1px 1px;
+  padding: 10px 10px 10px 50px;
+  word-wrap: break-word;
+  min-height: 150px;
+}
+
+.hide {
+  display: none;
+}
+
+.maximize .editor-textarea,
+.maximize .previewer-text {
+  height: 95vh;
+  resize: none;
+}
+
+code {
+  background: orange;
+}
+
+th {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+td {
+  border: 2px dotted black;
+  padding: 5px;
+}
